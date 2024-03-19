@@ -1,8 +1,8 @@
-import express from "express";
+import {app} from "./src/app.js";
 import "dotenv/config";
 import  connectDB  from "./src/db/db.js";
 
-const app = express();
+
 
 connectDB()
   .then(() => {
