@@ -85,7 +85,7 @@ const google = async (req, res, next) => {
           Math.random().toString(9).slice(-4),
         email,
         password: hashedPassord,
-        profilePicture: googlePhotoUrl,
+        profilePicture: googlephotoUrl,
       });
       await newUser.save();
       const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
