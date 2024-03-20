@@ -6,6 +6,6 @@ const router = express.Router();
 
 router.get("/test", test);
 router.put("/update/:userId", verifyUser, updateUser);
-router.delete("/update/:userId", verifyUser, deleteUser);
+router.delete("/delete/:userId", verifyUser, deleteUser);
 
 export default router;
